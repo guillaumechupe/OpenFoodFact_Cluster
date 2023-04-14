@@ -2,3 +2,6 @@
 Machine learning project on the OpenFoodFact project whose goal is to do clustering on products
 
 URl for project
+
+Lien contenant tous les champs du dataset :
+https://static.openfoodfacts.org/data/data-fields.txt
