@@ -67,3 +67,29 @@ def outliers_nutrimentscols(df, g_per_100g_features):
     return df
 
 
+def outliers_nutrimentscols_others(df):
+    """
+    Filters a DataFrame based on certain conditions.
+
+    This function removes rows where values from some columns that
+    cannot be greater than other columns.
+
+    Parameters:
+        df (pandas.DataFrame): The DataFrame to be filtered.
+
+    Returns:
+        pandas.DataFrame: The filtered DataFrame.
+    """
+    # Delete rows where the nutrient type value cannot be greater than the nutrient total.
+    df = df[~(df['saturated-fat_100g'] > df['fat_100g'])
+            | (df['sodium_100g'] > df['salt_100g'])
+            | (df['added-sugars_100g'] > df['sugars_100g'])
+            | (df['sugars_100g'] > df['carbohydrates_100g'])]
+    
+    # Delete outliers from others nutrients cols with different unit
+    df = df[~(df['energy_100g'] > 3700)]
+    df = df[~(df['energy-from-fat_100g'] > 3700)]
+    df = df[~(df['energy-kcal_100g'] > 900)]
+    df = df[~((df['ph_100g'] < 0) | (df['ph_100g'] > 14))]
+    
+    return df
