@@ -130,5 +130,7 @@ dmypy.json
 
 #Dataset 
 df_withoutduplicatefeatures4.csv
+cleaned_openfoodfacts.csv
+datas_reste_non_num_a_traiter2.csv
 
 .DS_Store
