@@ -130,3 +130,5 @@ dmypy.json
 
 #Dataset 
 df_withoutduplicatefeatures4.csv
+
+.DS_Store
