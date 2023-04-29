@@ -132,5 +132,6 @@ dmypy.json
 df_withoutduplicatefeatures4.csv
 cleaned_openfoodfacts.csv
 datas_reste_non_num_a_traiter2.csv
-
+df_CatVal_cleaned.csv
+notebook/image
 .DS_Store

@@ -1,0 +1,4 @@
+df_CatVal_cleaned.csv :
+    input : datas_reste_non_num_a_traiter2.csv
+    action: categorical values = encoding pnns1 and nutrigrade
+    shape : (1833614, 171)
