@@ -1,4 +1,9 @@
 df_CatVal_cleaned.csv :
     input : datas_reste_non_num_a_traiter2.csv
     action: categorical values = encoding pnns1 and nutrigrade
-    shape : (1833614, 171)
+    shape : (1833614, 140)
+
+dfCatVal_code_product_quantity.csv:
+    input : df_CatVal_cleaned.csv
+    action: categorical values = code, product_name, qunatity_name(without nan) to join with the input df
+    shape : (1833614, 3)
