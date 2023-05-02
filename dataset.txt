@@ -29,7 +29,7 @@ df_withoutduplicatefeatures4.csv :
 datas_reste_non_num_a_traiter2.csv :
     input : df_withoutduplicatefeatures4.csv
     action: cleaning numerical features and some categorical features
-    shape : (2830755, 165)
+    shape : (1833614, 165)
     
 df_CatVal_cleaned.csv :
     input : datas_reste_non_num_a_traiter2.csv
