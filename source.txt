@@ -5,3 +5,4 @@ Mates project:
 https://www.kaggle.com/code/michaelfumery/openfoodfacts-data-exploration
 https://www.kaggle.com/code/michaelfumery/openfoodfacts-data-cleaning
 https://github.com/SmellyArmure/OC_DS_Project3
+https://github.com/thomastrg/NLP_Clustering_OpenFoodFacts
