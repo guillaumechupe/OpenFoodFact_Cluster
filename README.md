@@ -1,4 +1,4 @@
-# OpenFoodFact_Cluster
+# OpenFoodFacts Clustering
 
 Machine learning project on the OpenFoodFact project whose goal is to do clustering on products
 
@@ -17,20 +17,3 @@ https://static.openfoodfacts.org/data/data-fields.txt
 - notebooks: notebooks dedicated to analyses
 - results : results (pictures, model performance, ... )
 
-## Steps to start working on the project
-
-- Create a new virtual environment and activate it :
-
-with pyenv virtualenv:
-```bash
-	pyenv virtualenv clustering_OFF && pyenv activate clustering_OFF
-```
-or conda:
-```bash
-	conda clustering_OFF && conda activate clustering_OFF
-```
-
-- Install required librairies :
-```bash
-  	pip install -r requirements
-```
