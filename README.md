@@ -10,6 +10,8 @@ Documentations : https://docs.google.com/document/d/1MhWQtcY0oPlCQaRdboHdS-F7hMP
 Link containing all the fields of the dataset:
 https://static.openfoodfacts.org/data/data-fields.txt
 
+Presentation : https://docs.google.com/presentation/d/1WPntZKQwHZfOzPWSSPfUUf-dfTQNG88MepXTaRBagJU/edit?usp=sharing
+
 ## Content directories
 
 - data: small additional datasets (<50Mo)
