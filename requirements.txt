@@ -12,6 +12,7 @@ plotly
 scipy > 1.24
 
 # nlp
+re
 #gensim
 #spacy
 

@@ -1,0 +1,8 @@
+Learn about nutrition:
+https://www.santepubliquefrance.fr/media/files/02-determinants-de-sante/nutrition-et-activite-physique/nutri-score/qr-scientifique-technique-en
+
+Mates project:
+https://www.kaggle.com/code/michaelfumery/openfoodfacts-data-exploration
+https://www.kaggle.com/code/michaelfumery/openfoodfacts-data-cleaning
+https://github.com/SmellyArmure/OC_DS_Project3
+https://github.com/thomastrg/NLP_Clustering_OpenFoodFacts

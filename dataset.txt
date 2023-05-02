@@ -1,0 +1,42 @@
+df_nutrition.csv :
+    input : en.openfoodfacts.org.products.csv
+    action: code product_name and all _100g features
+    shape : (12830755, 118)
+    
+df_withoutduplicatefeatures.csv :
+    input : en.openfoodfacts.org.products.csv
+    action: dropping features ['packaging', 'packaging_tags', 'brands_tags', 'categories', 'categories_tags', 'origins',
+                               'origins_tags', 'manufacturing_places_tags', 'labels', 'labels_tags', 'emb_codes_tags',
+                               'cities', 'countries', 'countries_tags', 'traces', 'traces_tags', 'additives', 'additives_tags']
+    shape : (2830755, 183)
+    
+df_withoutduplicatefeatures2.csv :
+    input : df_withoutduplicatefeatures.csv
+    action: dropping features ['created_datetime', 'last_modified_t', 'last_modified_datetime', 'main_category', 'image_url']
+    shape : (2830755, 178)
+    
+df_withoutduplicatefeatures3.csv :
+    input : df_withoutduplicatefeatures2.csv
+    action: dropping features ['image_ingredients_url', 'image_nutrition_url', 'last_image_t', 'last_image_datetime', 'states',
+                               'states_tags', 'food_groups', 'food_groups_tags', 'allergens_en', 'ingredients_tags']
+    shape : (2830755, 168)
+
+df_withoutduplicatefeatures4.csv :
+    input : df_withoutduplicatefeatures3.csv
+    action: dropping features ['creator', 'created_t', 'last_modified_by']
+    shape : (2830755, 165)
+    
+datas_reste_non_num_a_traiter2.csv :
+    input : df_withoutduplicatefeatures4.csv
+    action: cleaning numerical features and some categorical features
+    shape : (1833614, 165)
+    
+df_CatVal_cleaned.csv :
+    input : datas_reste_non_num_a_traiter2.csv
+    action: categorical values = encoding pnns1 and nutrigrade
+    shape : (1833614, 140)
+
+dfCatVal_code_product_quantity.csv:
+    input : df_CatVal_cleaned.csv
+    action: categorical values = code, product_name, qunatity_name(without nan) to join with the input df
+    shape : (1833614, 3)
